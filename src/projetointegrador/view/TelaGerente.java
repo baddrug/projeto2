@@ -309,7 +309,7 @@ public class TelaGerente extends javax.swing.JFrame {
 
     private void bntFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntFornecedorActionPerformed
         // TODO add your handling code here:
-        TelaCadProd telaF = new TelaCadProd();
+        TelaCadForn telaF = new TelaCadForn();
         telaF.setVisible(true);
         
         
