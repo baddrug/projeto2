@@ -21,18 +21,22 @@ public class Fornecedor {
     private String CEP;
     private String UF;
     
-    public Fornecedor(){
-        qtdFornecedorCriados++;
-        this.IDF = qtdFornecedorCriados;
+    public String getCNPJSomenteNumeros() {
+        return CNPJ.replace(".", "").replace("-", "");
+    }
+    public String getCEPSomenteNumeros(){
+        return CEP.replace("-", "");
     }
     public Fornecedor(int Id){
         this.IDF = Id;
         
         
     }
+    public Fornecedor(){
+        
+    }
     public Fornecedor(String nomeFornecedor, String CNPJ, String Telefone, String Endereco, String Bairro, String Cidade, String CEP, String UF){
-        qtdFornecedorCriados++;
-        this.IDF = qtdFornecedorCriados;
+        
         
         this.nomeFornecedor = nomeFornecedor;
         this.CNPJ = CNPJ;

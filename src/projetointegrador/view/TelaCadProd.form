@@ -575,16 +575,16 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="jblUF" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="jtUF" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
+                                              <Component id="jblUF" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
                                                   <Component id="jblCEP" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                               </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="jtUF" min="-2" pref="31" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                                                  <Component id="jfCEP" max="32767" attributes="0"/>
-                                              </Group>
+                                              <Component id="jfCEP" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
@@ -653,11 +653,13 @@
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jtBairro" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jtCidade" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jtUF" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="jfCEP" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jtBairro" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jtCidade" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jfCEP" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
@@ -679,7 +681,6 @@
                                       <Component id="bntSalvar" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                                       <Component id="bntCancelar" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>

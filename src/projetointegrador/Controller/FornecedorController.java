@@ -14,9 +14,9 @@ import projetointegrador.model.Fornecedor;
  * @author carlo
  */
 public class FornecedorController {
-     public static boolean salvarFornecedor(String pNome, String pCPF, String pTelefone, String pBairro, String pCidade, String pCEP, String pEndereco, String pUF){
+     public static boolean salvarFornecedor(String pNome, String pCNPJ, String pTelefone,String pEndereco, String pBairro, String pCidade, String pUF, String pCEP){
     
-            Fornecedor objFornecedor = new Fornecedor(pNome, pCPF, pTelefone, pBairro, pCEP, pCidade, pEndereco, pUF);
+            Fornecedor objFornecedor = new Fornecedor(pNome, pCNPJ, pTelefone, pEndereco, pBairro, pCidade, pUF, pCEP);
             
             boolean retorno = FornecedorDAO.SalvarFornecedor(objFornecedor);
             
@@ -32,17 +32,18 @@ public class FornecedorController {
             
             listaFornecedorString.add(new String[]{String.valueOf(itemLista.getIDF())
                                                     ,itemLista.getNomeFornecedor()
-                                                    ,itemLista.getCNPJ(),itemLista.getCEP(),itemLista.getBairro(),itemLista.getCidade()
-                    ,itemLista.getEndereco(), itemLista.getTelefone(), itemLista.getUF()});
+                                                    ,itemLista.getCNPJ(), itemLista.getTelefone(),itemLista.getEndereco()
+                    ,itemLista.getBairro(),itemLista.getCidade()
+                    , itemLista.getUF(),itemLista.getCEP()});
                                                     
             
         }
                 
         return listaFornecedorString;
     }
-    public static boolean atualizarFornecedor(int Id, String pnomeFornecedor, String pCNPJ, String pTelefone, String pBairro, String pCidade, String pCEP, String pEndereco, String pUF)
+    public static boolean atualizarFornecedor(int Id, String pnomeFornecedor, String pCNPJ, String pTelefone, String pEndereco, String pBairro, String pCidade, String pUF, String pCEP)
     {
-        Fornecedor objFornecedorAlterar =  new Fornecedor(  pnomeFornecedor, pCNPJ, pTelefone, pBairro, pCEP, pCidade, pEndereco, pUF);
+        Fornecedor objFornecedorAlterar =  new Fornecedor(  pnomeFornecedor, pCNPJ, pTelefone, pEndereco, pBairro, pCidade, pUF, pCEP);
         
         return FornecedorDAO.atualizarFornecedor(objFornecedorAlterar);
         
